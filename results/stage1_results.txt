@@ -1,0 +1,82 @@
+
+========================================
+ APB UART STAGE-1 TESTBENCH
+ Random seed = 1
+========================================
+VCD info: dumpfile waveforms/stage1_basic.vcd opened for output.
+
+T1: RESET VALUES
+[PASS] Reset CTRL
+[PASS] Reset BAUD
+[PASS] Reset ERR
+[PASS] Reset STATUS
+[PASS] IRQ low after reset
+
+T2: REGISTER RW / INVALID ACCESS
+[PASS] BAUD read/write
+[PASS] INTEN read/write
+[PASS] Unmapped read PSLVERR
+[PASS] Write RO PSLVERR
+[PASS] Invalid access sticky bit
+[PASS] ERR write-one-to-clear
+
+T3: UART TX BASIC 8N1
+[PASS] TX start bit
+[PASS] TX data
+[PASS] TX stop bit
+
+T3B: UART TX EVEN PARITY
+[PASS] TX start bit
+[PASS] TX data
+[PASS] TX parity bit
+[PASS] TX stop bit
+
+T4: UART RX BASIC
+[PASS] RX not empty
+[PASS] RXDATA
+[PASS] RX empty after read
+
+T5: RANDOM LOOPBACK
+[PASS] Loopback byte
+[PASS] Loopback byte
+[PASS] Loopback byte
+[PASS] Loopback byte
+[PASS] Loopback byte
+[PASS] Loopback byte
+[PASS] Loopback byte
+[PASS] Loopback byte
+[PASS] Loopback byte
+[PASS] Loopback byte
+[PASS] RX empty after loopback drain
+
+T6: UART RX PARITY ERROR
+[PASS] RX parity error flag
+[PASS] RX data still delivered
+[PASS] ERR parity bit
+
+T7: UART RX FRAMING ERROR
+[PASS] RX framing error flag
+[PASS] ERR framing bit
+
+T8: TX FIFO FULL / OVERFLOW
+[PASS] TX FIFO full
+[PASS] No overflow before extra write
+[PASS] TX overflow sticky
+
+T9: RX FIFO UNDERFLOW
+[PASS] Empty RX read returns zero
+[PASS] RX underflow sticky
+
+T10: RX INTERRUPT
+[PASS] IRQ low before RX data
+[PASS] IRQ high with RX data
+[PASS] IRQ low after RX drain
+
+========================================
+          TESTBENCH SUMMARY
+========================================
+Total checks : 45
+Total errors : 0
+TB RESULT: PASS
+========================================
+verification/stage1_basic_functional/tb_basic.sv:572: $finish called at 30455000 (1ps)

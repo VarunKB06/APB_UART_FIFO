@@ -1,0 +1,25 @@
+========================================
+APB UART PROCEDURAL CHECKER STARTED
+5 PROTOCOL CHECKS ENABLED
+========================================
+VCD info: dumpfile waveforms/stage2_apb.vcd opened for output.
+========================================
+ STAGE 2: APB PROTOCOL VERIFICATION
+========================================
+[PASS] Valid APB write
+[PASS] Valid APB write
+[PASS] APB read PSLVERR check at address 0xc
+[PASS] APB read PSLVERR check at address 0x10
+[PASS] APB read PSLVERR check at address 0x40
+Stage 2 stimulus checks : 5
+Stage 2 stimulus errors : 0
+STAGE 2 TEST RESULT: PASS
+verification/stage2_apb_protocol/tb_stage2_wrapper.sv:136: $finish called at 295000 (1ps)
+
+========================================
+ APB PROTOCOL CHECKER SUMMARY
+========================================
+Total checks : 88
+Total errors : 0
+APB PROTOCOL RESULT: PASS
+========================================

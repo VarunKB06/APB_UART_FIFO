@@ -1,0 +1,323 @@
+
+==============================================
+ APB UART ADVANCED REGRESSION (STAGES 3-7)
+==============================================
+VCD info: dumpfile waveforms/stage3_to_stage7.vcd opened for output.
+
+========================================
+ STAGE 3: ADVANCED APB AND UART VERIFICATION
+========================================
+
+T11: BACK-TO-BACK APB REGISTER ACCESS
+[PASS] T11 BAUD readback
+[PASS] T11 INTEN readback
+[PASS] T11 CTRL readback
+[PASS] T11 INTEN cleared
+
+T12: RANDOMIZED REGISTER TRANSACTIONS
+[PASS] T12 Random BAUD readback
+[PASS] T12 Random INTEN readback
+[PASS] T12 Random BAUD readback
+[PASS] T12 Random INTEN readback
+[PASS] T12 Random BAUD readback
+[PASS] T12 Random INTEN readback
+[PASS] T12 Random BAUD readback
+[PASS] T12 Random INTEN readback
+[PASS] T12 Random BAUD readback
+[PASS] T12 Random INTEN readback
+[PASS] T12 Random BAUD readback
+[PASS] T12 Random INTEN readback
+[PASS] T12 Random BAUD readback
+[PASS] T12 Random INTEN readback
+[PASS] T12 Random BAUD readback
+[PASS] T12 Random INTEN readback
+[PASS] T12 Random BAUD readback
+[PASS] T12 Random INTEN readback
+[PASS] T12 Random BAUD readback
+[PASS] T12 Random INTEN readback
+[PASS] T12 Random BAUD readback
+[PASS] T12 Random INTEN readback
+[PASS] T12 Random BAUD readback
+[PASS] T12 Random INTEN readback
+[PASS] T12 Random BAUD readback
+[PASS] T12 Random INTEN readback
+[PASS] T12 Random BAUD readback
+[PASS] T12 Random INTEN readback
+[PASS] T12 Random BAUD readback
+[PASS] T12 Random INTEN readback
+[PASS] T12 Random BAUD readback
+[PASS] T12 Random INTEN readback
+[PASS] T12 Random BAUD readback
+[PASS] T12 Random INTEN readback
+[PASS] T12 Random BAUD readback
+[PASS] T12 Random INTEN readback
+[PASS] T12 Random BAUD readback
+[PASS] T12 Random INTEN readback
+[PASS] T12 Random BAUD readback
+[PASS] T12 Random INTEN readback
+
+T13: TX/RX FIFO STRESS WITH LOOPBACK
+[INFO] 12 bytes queued for loopback
+[PASS] T13 Loopback FIFO data
+[PASS] T13 Loopback FIFO data
+[PASS] T13 Loopback FIFO data
+[PASS] T13 Loopback FIFO data
+[PASS] T13 Loopback FIFO data
+[PASS] T13 Loopback FIFO data
+[PASS] T13 Loopback FIFO data
+[PASS] T13 Loopback FIFO data
+[PASS] T13 Loopback FIFO data
+[PASS] T13 Loopback FIFO data
+[PASS] T13 Loopback FIFO data
+[PASS] T13 Loopback FIFO data
+[PASS] T13 RX FIFO empty after drain
+
+T14A: RESET DURING ACTIVE UART TRANSMISSION
+[PASS] T14A TX idle after reset
+[PASS] T14A TX FIFO empty after reset
+
+T14B: RESET DURING ACTIVE UART RECEPTION
+[PASS] T14B RX FIFO empty after reset
+
+T15: ASYNCHRONOUS CLOCK-RATIO STRESS
+[INFO] Clock ratio 1: PCLK 10 ns, UCLK 7 ns
+[INFO] Clock ratio 2: PCLK 10 ns, UCLK 11 ns
+[INFO] Clock ratio 3: PCLK 10 ns, UCLK 9 ns
+[PASS] T15 RX data has no parity/framing error
+[PASS] T15 RX data has no parity/framing error
+[PASS] T15 RX data has no parity/framing error
+[PASS] T15 RX data has no parity/framing error
+[PASS] T15 RX data has no parity/framing error
+[PASS] T15 RX data has no parity/framing error
+[PASS] T15 RX data has no parity/framing error
+[PASS] T15 RX data has no parity/framing error
+[PASS] T15 RX data has no parity/framing error
+[PASS] T15 RX data has no parity/framing error
+[PASS] T15 RX data has no parity/framing error
+[PASS] T15 RX data has no parity/framing error
+[PASS] T15 RX data has no parity/framing error
+[PASS] T15 RX data has no parity/framing error
+[PASS] T15 RX data has no parity/framing error
+[PASS] T15 RX data has no parity/framing error
+[PASS] T15 RX data has no parity/framing error
+[PASS] T15 RX data has no parity/framing error
+[PASS] T15 RX data has no parity/framing error
+[PASS] T15 RX data has no parity/framing error
+[PASS] T15 RX data has no parity/framing error
+[PASS] T15 RX data has no parity/framing error
+[PASS] T15 RX data has no parity/framing error
+[PASS] T15 RX data has no parity/framing error
+[PASS] T15 RX data has no parity/framing error
+[PASS] T15 RX data has no parity/framing error
+[PASS] T15 RX data has no parity/framing error
+[PASS] T15 RX data has no parity/framing error
+[PASS] T15 RX data has no parity/framing error
+[PASS] T15 RX data has no parity/framing error
+
+========================================
+ STAGE 4: RANDOMIZED AND RESET VERIFICATION
+========================================
+
+T16: RANDOMIZED LOOPBACK DATA INTEGRITY
+[PASS] T16 randomized loopback data
+[PASS] T16 no parity/framing error
+[PASS] T16 randomized loopback data
+[PASS] T16 no parity/framing error
+[PASS] T16 randomized loopback data
+[PASS] T16 no parity/framing error
+[PASS] T16 randomized loopback data
+[PASS] T16 no parity/framing error
+[PASS] T16 randomized loopback data
+[PASS] T16 no parity/framing error
+[PASS] T16 randomized loopback data
+[PASS] T16 no parity/framing error
+[PASS] T16 randomized loopback data
+[PASS] T16 no parity/framing error
+[PASS] T16 randomized loopback data
+[PASS] T16 no parity/framing error
+[PASS] T16 randomized loopback data
+[PASS] T16 no parity/framing error
+[PASS] T16 randomized loopback data
+[PASS] T16 no parity/framing error
+[PASS] T16 randomized loopback data
+[PASS] T16 no parity/framing error
+[PASS] T16 randomized loopback data
+[PASS] T16 no parity/framing error
+
+T17: TX FIFO FULL AND OVERFLOW
+[PASS] T17 TX FIFO reaches full
+[PASS] T17 TX FIFO overflow flag
+
+T18: BACK-TO-BACK UART FRAMES
+[PASS] T18 back-to-back frame data
+[PASS] T18 frame error flags clear
+[PASS] T18 back-to-back frame data
+[PASS] T18 frame error flags clear
+[PASS] T18 back-to-back frame data
+[PASS] T18 frame error flags clear
+
+T19: RESET DURING ACTIVE TX AND RECOVERY
+[PASS] T19 TX returns to idle after reset
+[PASS] T19 data transfer after reset recovery
+[PASS] T19 no errors after recovery
+
+T20: FUNCTIONAL COVERAGE SUMMARY
+----------------------------------------
+ FUNCTIONAL COVERAGE
+----------------------------------------
+Randomized loopback       : 1
+TX FIFO full              : 1
+TX FIFO overflow          : 1
+Back-to-back frames       : 1
+Reset during TX           : 1
+Reset recovery            : 1
+----------------------------------------
+Coverage scenarios hit    : 6 / 6
+----------------------------------------
+STAGE 4 COVERAGE RESULT: ALL SCENARIOS HIT
+
+========================================
+ STAGE 5: CDC AND FIFO STRESS VERIFICATION
+========================================
+
+T21: CDC DATA INTEGRITY
+[PASS] T21 CDC expected data
+[PASS] T21 CDC error flags
+[PASS] T21 CDC expected data
+[PASS] T21 CDC error flags
+[PASS] T21 CDC expected data
+[PASS] T21 CDC error flags
+[PASS] T21 CDC expected data
+[PASS] T21 CDC error flags
+[PASS] T21 CDC expected data
+[PASS] T21 CDC error flags
+[PASS] T21 CDC expected data
+[PASS] T21 CDC error flags
+[PASS] T21 CDC expected data
+[PASS] T21 CDC error flags
+[PASS] T21 CDC expected data
+[PASS] T21 CDC error flags
+[PASS] T21 CDC expected data
+[PASS] T21 CDC error flags
+[PASS] T21 CDC expected data
+[PASS] T21 CDC error flags
+[PASS] T21 CDC expected data
+[PASS] T21 CDC error flags
+[PASS] T21 CDC expected data
+[PASS] T21 CDC error flags
+
+T22: RX FIFO OVERFLOW
+[PASS] T22 RX FIFO overflow flag
+
+T23: CONTIGUOUS RX FRAMES
+[PASS] T23 first contiguous frame
+[PASS] T23 second contiguous frame
+[PASS] T23 third contiguous frame
+
+T24: RX PARITY ERROR HANDLING
+[PASS] T24 even parity valid data
+[PASS] T24 valid parity flag clear
+[PASS] T24 incorrect parity detected
+[PASS] T24 incorrect parity data preserved
+
+========================================
+ STAGE 5 SCENARIO SUMMARY
+========================================
+CDC data integrity       : 1
+RX FIFO overflow         : 1
+Contiguous RX frames     : 1
+UART parity handling     : 1
+STAGE 5 SCENARIO RESULT: ALL HIT
+\n========================================
+ STAGE 6: ROBUSTNESS AND CONCURRENCY VERIFICATION
+========================================
+
+T25: UART FRAMING ERROR AND RECOVERY
+[PASS] T25 framing error flag
+[PASS] T25 received data preserved
+[PASS] T25 sticky framing error
+[PASS] T25 recovery data
+[PASS] T25 recovery framing flag clear
+
+T26: ASYNCHRONOUS RX AND APB CONCURRENCY
+[PASS] T26 APB STATUS read has no bus error
+[PASS] T26 APB STATUS read has no bus error
+[PASS] T26 APB STATUS read has no bus error
+[PASS] T26 APB STATUS read has no bus error
+[PASS] T26 APB STATUS read has no bus error
+[PASS] T26 APB STATUS read has no bus error
+[PASS] T26 APB STATUS read has no bus error
+[PASS] T26 APB STATUS read has no bus error
+[PASS] T26 APB STATUS read has no bus error
+[PASS] T26 APB STATUS read has no bus error
+[PASS] T26 APB STATUS read has no bus error
+[PASS] T26 APB STATUS read has no bus error
+[PASS] T26 APB STATUS read has no bus error
+[PASS] T26 APB STATUS read has no bus error
+[PASS] T26 APB STATUS read has no bus error
+[PASS] T26 APB STATUS read has no bus error
+[PASS] T26 APB STATUS read has no bus error
+[PASS] T26 APB STATUS read has no bus error
+[PASS] T26 APB STATUS read has no bus error
+[PASS] T26 APB STATUS read has no bus error
+[PASS] T26 concurrent RX data
+[PASS] T26 concurrent RX error flags clear
+
+T27: RX FIFO FULL, OVERFLOW AND RECOVERY
+[PASS] T27 RX overflow sticky flag
+[PASS] T27 RX FIFO empty after drain
+[PASS] T27 RX FIFO recovery data
+[PASS] T27 no framing error after recovery
+
+T28: UART PARITY CONFIGURATION TESTS
+[PASS] T28 even parity valid data
+[PASS] T28 even parity no error
+[PASS] T28 odd parity valid data
+[PASS] T28 odd parity no error
+
+T29: APB INVALID ACCESS AND ERROR CLEARING
+[PASS] T29 unmapped read PSLVERR
+[PASS] T29 write read-only register PSLVERR
+[PASS] T29 invalid access sticky flag
+[PASS] T29 error flags cleared
+
+T30: UART TX TWO-STOP-BIT CONFIGURATION
+[PASS] T30 first stop bit is high
+[PASS] T30 second stop bit is high
+[PASS] T30 TX returns to idle after two stop bits
+
+==============================================
+ STAGE 7: FUNCTIONAL COVERAGE AND REGRESSION CLOSURE
+==============================================
+APB read                  : 1
+APB write                 : 1
+TXDATA write              : 1
+RXDATA read               : 1
+STATUS read               : 1
+BAUD programmed           : 1
+TX enabled                : 1
+RX enabled                : 1
+Parity enabled            : 1
+Even parity               : 1
+Odd parity                : 1
+1 stop bit                : 1
+2 stop bits               : 1
+Loopback enabled          : 1
+Invalid APB access        : 1
+IRQ observed              : 1
+TX serial activity        : 1
+RX serial activity        : 1
+----------------------------------------------
+Coverage bins hit         : 18 / 18
+Functional coverage      : 100.00%
+NOTE: event-bin coverage; not RTL code coverage.
+==============================================
+
+==============================================
+ STAGE 7: FINAL REGRESSION SUMMARY
+==============================================
+Total checks : 199
+Total errors : 0
+STAGE 7 REGRESSION RESULT: PASS
+==============================================
+verification/stage3_to_stage7_advanced_regression/tb_stage7.sv:1541: $finish called at 220095000 (1ps)
