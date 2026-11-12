@@ -1,4 +1,0 @@
-build/
-*.vvp
-*.vcd
-!waveforms/*.vcd
